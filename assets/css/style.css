@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter';
+    background-color: hsl(0, 0%, 8%);
+}
+
+/* MAIN PROFILE CARD */
+.profile__card {
+    background-color: hsl(0, 0%, 12%);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+
+    /* Center the card and make content column-oriented */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 100px auto;
+    max-width: 400px;
+    /* min-height: 100px; */
+}
+
+
+/* USER PROFILE IMAGE */
+.profile__img {
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    margin: 25px auto;
+}
+
+
+/* USER PROFILE NAME */
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* USER PROFILE LOCATION */
+.profile__location {
+    font-size: 13px;
+    color: hsl(75, 94%, 57%);
+    margin-bottom: 10px;
+}
+
+
+/* USER PROFILE BIO */
+.profile__bio {
+    font-size: 14px;
+    font-style: italic;
+    color: hsl(0, 0%, 80%);
+    margin: 30px 40px 15px 40px;
+}
+
+/* BUTTON */
+.profile__buttons {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* width: 100%; */
+}
+
+.btn {
+    /* display: block; */
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(0, 0%, 20%);
+    padding: 14px;
+    margin: 8px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: hsl(75, 94%, 57%);
+    color: hsl(0, 0%, 8%);
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 767px) {
+    body {
+        padding: 20px;
+    }
+	.profile__card {
+        padding: 15px;
+        max-width: 345px;
+        margin: 50px auto;
+	}
+    h2 {
+        font-weight: 430;
+    }
+    .profile__location {
+        font-weight: 550;
+    }
+    .profile__bio {
+        font-size: 12px;
+    }
+}
+
+
