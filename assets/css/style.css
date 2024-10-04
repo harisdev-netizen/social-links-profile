@@ -1,109 +1,105 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Inter';
-    background-color: hsl(0, 0%, 8%);
+  font-family: 'Inter';
+  background-color: #141414;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* MAIN PROFILE CARD */
 .profile__card {
-    background-color: hsl(0, 0%, 12%);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: center;
-    color: #fff;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-
-    /* Center the card and make content column-oriented */
-    display: flex;
-    flex-direction: column;
-    margin: 100px auto;
-    max-width: 400px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 8px 16px #0000004d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-inline: auto;
+  max-width: 400px;
 }
 
-
-/* USER PROFILE IMAGE */
 .profile__img {
-    width: 87px;
-    height: 87px;
-    border-radius: 50%;
-    margin: 25px auto;
+  width: 87px;
+  height: 87px;
+  border-radius: 50%;
+  margin-bottom: 25px;
 }
 
-
-/* USER PROFILE NAME */
-h2 {
-    font-size: 24px;
-    font-weight: 400;
-    margin-bottom: 10px;
+h1 {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
 }
 
-/* USER PROFILE LOCATION */
 .profile__location {
-    font-size: 13px;
-    color: hsl(75, 94%, 57%);
-    margin-bottom: 10px;
+  font-size: 13px;
+  color: #c5f82a;
+  margin-bottom: 10px;
 }
 
-
-/* USER PROFILE BIO */
 .profile__bio {
-    font-size: 14px;
-    font-style: italic;
-    color: hsl(0, 0%, 80%);
-    margin: 30px 40px 15px 40px;
+  font-size: 14px;
+  font-style: italic;
+  color: #cccccc;
+  margin: 30px 40px 15px 40px;
 }
 
-/* BUTTON */
-.profile__buttons {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
+.profile__btns {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
 }
 
-.btn {
-    color: hsl(0, 0%, 100%);
-    background-color: hsl(0, 0%, 20%);
-    padding: 14px;
-    margin: 8px 0;
-    font-size: 14px;
-    font-weight: 500;
-    text-decoration: none;
-    border-radius: 10px;
-    transition: background-color 0.3s;
+.profile__btns a {
+  color: #ffffff;
+  background-color: #333333;
+  padding: 14px;
+  margin: 8px 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  display: block;
 }
 
-.btn:hover {
-    background-color: hsl(75, 94%, 57%);
-    color: hsl(0, 0%, 8%);
+.profile__btns a:hover {
+  background-color: #c5f82a;
+  color: #141414;
 }
 
-
-/* MEDIA QUERY */
 @media (max-width: 767px) {
-    body {
-        padding: 20px;
-    }
-	.profile__card {
-        padding: 15px;
-        max-width: 345px;
-        margin: 50px auto;
-	}
-    h2 {
-        font-weight: 430;
-    }
-    .profile__location {
-        font-weight: 550;
-    }
-    .profile__bio {
-        font-size: 12px;
-    }
+  body {
+    padding: 20px;
+  }
+
+  .profile__card {
+    padding: 15px;
+    max-width: 345px;
+    margin: 50px auto;
+  }
+
+  h2 {
+    font-weight: 430;
+  }
+
+  .profile__location {
+    font-weight: 550;
+  }
+
+  .profile__bio {
+    font-size: 12px;
+  }
 }
-
-
